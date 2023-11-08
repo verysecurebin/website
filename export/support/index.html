@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>SecureBin</title>
+    <meta name="description" content="Google Chrome extension for interfacing securely with PasteBin. Users can encrypt plaintext and have it stored onto PasteBin, where they can copy the link and key to send it to another user for decryption. First, users will need to get a API key from PasteBin to be able to post onto PasteBin. Once the API key is added to the extension in the settings page, users can post their messages securely to PasteBin. To learn more about our project and the design decisions check out the Wiki page.">
+    <link rel="icon" type="image/png" sizes="128x128" href="../assets/img/Logo/logo128.png?h=26221b62b57295eb8f6f5d397295a7fe">
+    <link rel="icon" type="image/png" sizes="128x128" href="../assets/img/Logo/logo128.png?h=26221b62b57295eb8f6f5d397295a7fe">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/Logo/logo192.png?h=78dce701743c1fbc0bf5ca2d436c9eba">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/img/Logo/logo512.png?h=ebc3f90b972ea8456db4efa1d7df5613">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/img/Logo/logo512.png?h=ebc3f90b972ea8456db4efa1d7df5613">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css?h=cd822b7fd22c8a95a68470c795adea69">
+    <link rel="stylesheet" href="../assets/css/styles.css?h=b8dd536334ad7f714a957d302b4bdfd9">
+</head>
+
+<body style="--bs-body-bg: #212121;">
+    <!-- Start: Logo -->
+    <div style="margin: auto;display: block;/*width: 498px;*/margin-top: 81px;"><img src="../assets/img/logo.svg?h=f161e67b873a063dc2a0ba9587073651" style="display: block;margin: auto;width: 116px;/*margin-top: 48px;*/"></div><!-- End: Logo -->
+    <!-- Start: Title -->
+    <div style="margin: auto;display: block;width: 498px;max-width: 90%;/*padding-bottom: 150px;*/">
+        <h1 style="border-color: rgb(244,244,244);--bs-body-color: #ffffff;color: white;margin-top: 34px;/*max-width: 95%;*/text-align: center;">Get Help</h1>
+        <p style="color: #a2a2a2;text-align: center;font-size: 18px;/*margin-top: auto;*/display: block;margin: 27px auto auto auto;max-width: 88%;">Hit a snag or spotted a bug? Let us know on our GitHub page. Also, we're always on the lookout for contributors, so if you're interested in lending a hand with solutions, we'd love to have you on board!</p><a class="btn btn-primary" role="button" style="margin: auto;display: block;background-color: #1D6BC6;margin-top: 32px;border: none;max-width: 372px;padding: 9px 76px;/*color: var(--bs-indigo);*/" href="https://github.com/secbin/extension/issues/new" target="_blank">Create Issue</a><a class="btn btn-primary" role="button" style="margin: auto;display: block;background-color: #4b4b4b;margin-top: 16px;border: none;max-width: 372px;padding: 9px 88px;/*color: var(--bs-indigo);*/" href="https://github.com/secbin/extension/issues" target="_blank">See Existing Issues</a>
+        <p style="color: #a2a2a2;text-align: center;font-size: 18px;margin-top: 36px;margin-bottom: 87px;">To contact the website admin, please email&nbsp;<a href="mailto:admin@securebin.org">admin@securebin.org.</a></p>
+        <div style="margin: auto;display: block;width: 498px;max-width: 90%;">
+            <h1 style="border-color: rgb(244,244,244);--bs-body-color: #ffffff;color: white;margin-top: 25px;max-width: 95%;margin-bottom: 50px;text-align: center;font-size: 28px;">FAQ</h1>
+            <h1 style="border-color: rgb(244,244,244);--bs-body-color: #ffffff;color: white;margin-top: 25px;max-width: 95%;text-align: left;font-size: 20px;">What is SecureBin?</h1>
+            <p style="color: #a2a2a2;text-align: left;font-size: 18px;/*margin-top: 27px;*/">SecureBin is a Google Chrome extension that allows you to securely interface with PasteBin. It encrypts plaintext for safe storage and sharing online.</p>
+            <h1 style="border-color: rgb(244,244,244);--bs-body-color: #ffffff;color: white;margin-top: 25px;max-width: 95%;text-align: left;font-size: 20px;">How does it work?</h1>
+            <p style="color: #a2a2a2;text-align: left;font-size: 18px;/*margin-top: 27px;*/">SecureBin lets you encrypt text and store it on PasteBin. You get a link and a key for sharing, which the recipient uses for decryption.</p>
+            <h1 style="border-color: rgb(244,244,244);--bs-body-color: #ffffff;color: white;margin-top: 25px;max-width: 95%;text-align: left;font-size: 20px;">What do I need to use SecureBin?</h1>
+            <p style="color: #a2a2a2;text-align: left;font-size: 18px;/*margin-top: 27px;*/">You need a PasteBin API key, which you add to SecureBin's settings. Then you can post encrypted messages to PasteBin.</p>
+            <h1 style="border-color: rgb(244,244,244);--bs-body-color: #ffffff;color: white;margin-top: 25px;max-width: 95%;text-align: left;font-size: 20px;">Can I use SecureBin without encryption?</h1>
+            <p style="color: #a2a2a2;text-align: left;font-size: 18px;/*margin-top: 27px;*/">Sure, if you just want to use SecureBin as a PasteBin client, in version 1.1, there's a setting to turn off the encryption features.</p>
+            <h1 style="border-color: rgb(244,244,244);--bs-body-color: #ffffff;color: white;margin-top: 25px;max-width: 95%;text-align: left;font-size: 20px;">What encryption does SecureBin use?</h1>
+            <p style="color: #a2a2a2;text-align: left;font-size: 18px;/*margin-top: 27px;*/">SecureBin uses the Forge Crypto Library and supports AES encryption in CBC, CTR, and GCM modes.</p>
+            <h1 style="border-color: rgb(244,244,244);--bs-body-color: #ffffff;color: white;margin-top: 25px;max-width: 95%;text-align: left;font-size: 20px;">What are the supported key lengths?</h1>
+            <p style="color: #a2a2a2;text-align: left;font-size: 18px;/*margin-top: 27px;*/">Supported key lengths are 128, 192, 256 bits.</p>
+            <h1 style="border-color: rgb(244,244,244);--bs-body-color: #ffffff;color: white;margin-top: 25px;max-width: 95%;text-align: left;font-size: 20px;">Is SecureBin secure if someone has access to my computer?</h1>
+            <p style="color: #a2a2a2;text-align: left;font-size: 18px;/*margin-top: 27px;*/">No, it doesn't protect against physical access to your computer. Data in the extension’s history or settings is stored unencrypted.</p>
+            <h1 style="border-color: rgb(244,244,244);--bs-body-color: #ffffff;color: white;margin-top: 25px;max-width: 95%;text-align: left;font-size: 20px;">What information is public after encryption?</h1>
+            <p style="color: #a2a2a2;text-align: left;font-size: 18px;/*margin-top: 27px;*/">The cipher text, encryption mode, IV, tag (with GCM mode), salt, and key length (with password encryption) are public.</p>
+            <h1 style="border-color: rgb(244,244,244);--bs-body-color: #ffffff;color: white;margin-top: 25px;max-width: 95%;text-align: left;font-size: 20px;">What remains private?</h1>
+            <p style="color: #a2a2a2;text-align: left;font-size: 18px;/*margin-top: 27px;*/">The encryption key is private.</p>
+            <h1 style="border-color: rgb(244,244,244);--bs-body-color: #ffffff;color: white;margin-top: 25px;max-width: 95%;text-align: left;font-size: 20px;">How secure is JavaScript cryptography in browsers?</h1>
+            <p style="color: #a2a2a2;text-align: left;font-size: 18px;/*margin-top: 27px;*/">Opinions vary, but SecureBin ensures security by using open-source libraries to encrypt data locally, avoiding risks like man-in-the-middle attacks.</p>
+            <h1 style="border-color: rgb(244,244,244);--bs-body-color: #ffffff;color: white;margin-top: 25px;max-width: 95%;text-align: left;font-size: 20px;">Where can I learn more about SecureBin and its development?</h1>
+            <p style="color: #a2a2a2;text-align: left;font-size: 18px;/*margin-top: 27px;*/">Check out our Wiki page to learn about our project, design decisions, and security details.</p><a class="btn btn-primary" role="button" style="margin: auto;display: block;background-color: #4b4b4b;margin-top: 28px;border: none;max-width: 100%;padding: 9px 88px;/*color: var(--bs-indigo);*/" href="https://github.com/verysecurebin/securebin/wiki" target="_blank">Learn more in the Wiki</a>
+        </div>
+    </div><!-- End: Title -->
+    <footer style="padding-top: 111px;/*margin-top: 37vh;*//*position: absolute;*/bottom: 20px;width: 100%;/*margin-left: auto;*/">
+        <div style="margin: auto;display: block;/*width: 20px;*/margin-bottom: 20px;/*width: 498px;*//*margin-top: 81px;*/"><img src="../assets/img/logo.svg?h=f161e67b873a063dc2a0ba9587073651" style="display: block;margin: auto;/*width: 116px;*//*margin-top: 48px;*/" width="90px"></div>
+        <p style="color: rgb(162,162,162);height: 9px;text-align: center;margin-top: -6px;font-size: 9px;">© Copyright 2022 - 2023 securebin.</p>
+    </footer>
+    <script src="../assets/bootstrap/js/bootstrap.min.js?h=e55bde7d6e36ebf17ba0b8c1e80e4065"></script>
+</body>
+
+</html>
